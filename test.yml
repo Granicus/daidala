@@ -1,0 +1,57 @@
+styles:
+  color: "${color}"
+  backgroundColor: "${backgroundColor}"
+  WebkitBoxShadow: "0 ${boxShadowSize}px 0 ${boxShadowColor}"
+  MozBoxShadow: "0 ${boxShadowSize}px 0 ${boxShadowColor}"
+  boxShadow: "0 ${boxShadowSize}px 0 ${boxShadowColor}"
+  textTransform: "uppercase"
+  display: "inline-block"
+  padding: "6px 12px"
+  marginBottom: "0"
+  fontSize: "14px"
+  fontWeight: "400"
+  lineHeight: "20px"
+  textAlign: "center"
+  whiteSpace: "nowrap"
+  verticalAlign: "middle"
+  touchAction: "manipulation"
+  cursor: "pointer"
+  userSelect: "none"
+  backgroundImage: "none"
+  border: "1px solid transparent"
+  borderRadius: "4px"
+  overflow: "visible"
+  textDecoration: "none"
+  backgroundClip: "border-box"
+  ":active":
+    textDecoration: "none"
+    WebkitTransition: "all 0.1s ease-in-out"
+    MozTransition: "all 0.1s ease-in-out"
+    MsTransition: "all 0.1s ease-in-out"
+    OTransition: "all 0.1s ease-in-out"
+    transition: "all 0.1s ease-in-out"
+    WebkitBoxShadow: "0 ${boxShadowSizeActive}px 0 ${boxShadowColor}"
+    MozBoxShadow: "0 ${boxShadowSizeActive}px 0 ${boxShadowColor}"
+    boxShadow: "0 ${boxShadowSizeActive}px 0 ${boxShadowColor}"
+  ":focus":
+    outline: "0"
+    textDecoration: "none"
+
+values:
+  "action: alert":
+    "contrast: light":
+      backgroundColor: "#e48d86"
+      boxShadowColor: "#db675e"
+    "contrast: dark":
+      backgroundColor: "#912b33"
+      boxShadowColor: "#811519"
+  "contrast: light":
+    color: "#000"
+  "contrast: dark":
+    color: "#fff"
+  "size: small":
+    boxShadowSize: "3"
+    boxShadowSizeActive: "2"
+  "size: large":
+    boxShadowSize: "5"
+    boxShadowSizeActive: "3"
