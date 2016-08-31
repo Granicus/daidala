@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+var daidala = require('../built')
+
+if(process.argv.length !== 4) {
+  throw new Error('Invalid number of arguments')
+}
+
+var yamlFilename = process.argv[2]
+var outputFilename = process.argv[3]
+
+daidala.compileYaml(yamlFilename, outputFilename)

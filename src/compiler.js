@@ -1,4 +1,4 @@
-import { OptionMapNode } from 'backend'
+import { OptionMapNode } from './backend'
 
 const backendImportDeclaration = {
   type: 'ImportDeclaration',
@@ -39,8 +39,8 @@ const backendImportDeclaration = {
   ],
   source: {
     type: 'Literal',
-    value: 'daidala/backend',
-    raw: '\"daidala/backend\"'
+    value: 'daidala',
+    raw: '\"daidala\"'
   }
 }
 
